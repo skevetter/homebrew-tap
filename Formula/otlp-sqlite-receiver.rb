@@ -1,9 +1,9 @@
 class OtlpSqliteReceiver < Formula
   desc "OTLP telemetry receiver that stores in SQLite"
   homepage "https://github.com/skevetter/otlp-sqlite-receiver"
-  url "https://github.com/skevetter/otlp-sqlite-receiver/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "f579248a3d23191ea9f0b7bdeb90053de17dff1ee943d429ee6a6b211cc5b256"
-  version "0.1.0"
+  url "https://github.com/skevetter/otlp-sqlite-receiver/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "fb054b2837a3491c953e875a64b2a3dae66d96377f41e1f007d4ff8197945590"
+  version "0.2.0"
   license "MIT"
 
   depends_on "rust" => :build
