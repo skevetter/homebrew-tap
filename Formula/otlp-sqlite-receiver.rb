@@ -14,4 +14,12 @@ class OtlpSqliteReceiver < Formula
   test do
     assert_match "Usage", shell_output("#{bin}/otlp-sqlite-receiver --help")
   end
+
+  service do
+    run [opt_bin/"otlp-sqlite-receiver", "serve"]
+    keep_alive true
+    log_path var/"log/otlp-sqlite-receiver.log"
+    error_log_path var/"log/otlp-sqlite-receiver.log"
+    working_dir var
+  end
 end
