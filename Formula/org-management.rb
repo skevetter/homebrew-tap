@@ -1,9 +1,9 @@
 class OrgManagement < Formula
   desc "CLI tool for org-chart, directory lookup, and artifact inventory management"
   homepage "https://github.com/skevetter/org-management"
-  url "https://github.com/skevetter/org-management/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "13ab003bdc159b4781834c9f5027862b8e892738ef04a52984b7a16ec1791abe"
-  version "0.1.0"
+  url "https://github.com/skevetter/org-management/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "3998b4d484fd91c9c53b532b443f5aec213c56ef28388d4b4b2099f558365cf3"
+  version "0.2.0"
   license "MIT"
 
   depends_on "rust" => :build
