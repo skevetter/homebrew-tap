@@ -1,9 +1,9 @@
 class TaskManagement < Formula
   desc "CLI task management tool with SQLite backend"
   homepage "https://github.com/skevetter/task-management"
-  url "https://github.com/skevetter/task-management/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "fe7dbe998b03afeb79e557c35361eb270e9c9f1dd556d7a9562cc5c034ed5028"
-  version "0.1.0"
+  url "https://github.com/skevetter/task-management/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "4e3bd812fcd42e156c15ded84f8fff277a65a7eaa62ddf56490c6625fa31be49"
+  version "0.2.0"
   license "MIT"
 
   depends_on "rust" => :build
