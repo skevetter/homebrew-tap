@@ -16,3 +16,4 @@ class ChatManagement < Formula
     assert_match "Usage", shell_output("#{bin}/chat-management --help")
   end
 end
+
