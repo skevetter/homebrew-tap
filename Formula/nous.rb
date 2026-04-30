@@ -4,9 +4,12 @@ class Nous < Formula
   url "https://github.com/skevetter/nous.git", tag: "v0.4.0", using: :git
   license "MIT"
 
+  depends_on "openssl" => :build
+  depends_on "pkg-config" => :build
   depends_on "rust" => :build
 
   def install
+    ENV["OPENSSL_DIR"] = Formula["openssl"].opt_prefix
     system "cargo", "install", "--path", "crates/nous-cli", "--root", prefix
   end
 
