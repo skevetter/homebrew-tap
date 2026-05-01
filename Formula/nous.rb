@@ -1,13 +1,13 @@
 class Nous < Formula
   desc "The nous platform CLI"
   homepage "https://github.com/skevetter/nous"
-  version "0.9.0"
+  version "0.10.0"
   license "MIT"
 
   on_linux do
     on_arm do
-      url "https://github.com/skevetter/nous/releases/download/v0.9.0/nous-linux-aarch64"
-      sha256 "97da85b618edcd0118d139200a9398166ce366da15f1cd5c38139954783fc414"
+      url "https://github.com/skevetter/nous/releases/download/v0.10.0/nous-linux-aarch64"
+      sha256 "0734df02e94d26dad8a98c99b97025c903c0698e478b50575362a005ab853fb9"
     end
   end
 
@@ -16,6 +16,6 @@ class Nous < Formula
   end
 
   test do
-    assert_match "nous 0.9.0", shell_output("#{bin}/nous --version")
+    assert_match "nous 0.10.0", shell_output("#{bin}/nous --version")
   end
 end
