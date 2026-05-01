@@ -1,19 +1,21 @@
 class Nous < Formula
   desc "The nous platform CLI"
   homepage "https://github.com/skevetter/nous"
-  url "https://github.com/skevetter/nous.git", tag: "v0.8.0", using: :git
+  version "0.8.1"
   license "MIT"
 
-  depends_on "openssl" => :build
-  depends_on "pkg-config" => :build
-  depends_on "rust" => :build
+  on_linux do
+    on_arm do
+      url "https://github.com/skevetter/nous/releases/download/v0.8.1/nous-linux-aarch64"
+      sha256 "27427cb813be4b47e6522d2161830fd808d7190052c65df1acc87bd4dcdf8863"
+    end
+  end
 
   def install
-    ENV["OPENSSL_DIR"] = Formula["openssl"].opt_prefix
-    system "cargo", "install", "--path", "crates/nous-cli", "--root", prefix
+    bin.install "nous-linux-aarch64" => "nous"
   end
 
   test do
-    assert_match "nous", shell_output("#{bin}/nous --help")
+    assert_match "nous 0.8.1", shell_output("#{bin}/nous --version")
   end
 end
