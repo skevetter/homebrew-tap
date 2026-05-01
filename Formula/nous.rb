@@ -1,7 +1,7 @@
 class Nous < Formula
   desc "The nous platform CLI"
   homepage "https://github.com/skevetter/nous"
-  url "https://github.com/skevetter/nous.git", tag: "v0.7.0", using: :git
+  url "https://github.com/skevetter/nous.git", tag: "v0.8.0", using: :git
   license "MIT"
 
   depends_on "openssl" => :build
