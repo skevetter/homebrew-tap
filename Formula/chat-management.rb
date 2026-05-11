@@ -1,9 +1,9 @@
 class ChatManagement < Formula
   desc "CLI communication management tool with SQLite backend"
   homepage "https://github.com/skevetter/chat-management"
-  url "https://github.com/skevetter/chat-management/archive/refs/tags/v0.3.1.tar.gz"
-  sha256 "acdb7d7de4e9ee871360c5afc78570ca6f719f34d49e97100151a60c34432944"
-  version "0.3.1"
+  url "https://github.com/skevetter/chat-management/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "91e179bf4f925aae1fc7fb51172f84b0c49aab3f00d578ce7dfa074d16b9ff24"
+  version "0.4.0"
   license "MIT"
 
   depends_on "rust" => :build
