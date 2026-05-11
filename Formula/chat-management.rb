@@ -2,7 +2,7 @@ class ChatManagement < Formula
   desc "CLI communication management tool with SQLite backend"
   homepage "https://github.com/skevetter/chat-management"
   url "https://github.com/skevetter/chat-management/archive/refs/tags/v0.4.1.tar.gz"
-  sha256 "8dbb6839df378035203e8d4950d82176cc57345ed9ed506b25c18374d2a3a781"
+  sha256 "e6f27c3e98039b0190e8df8c385cc2ed5d5ea88e422765630ca1e9bb523591cf"
   version "0.4.1"
   license "MIT"
 
